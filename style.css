@@ -1,0 +1,79 @@
+body{
+ background-color:lightblue;
+}
+
+h1.titulo{
+    color:brown;
+text-align:center;
+font-family: Arial;
+
+}
+.ximplaria{
+    color:brown;
+    text-align:center;
+    font-family:Verdana;
+
+}
+
+.slider{
+aspect-ratio: 10 / 16;
+width: 300px;
+position:relative;
+display:flex;
+overflow:scroll;
+scroll-snap-type: x mandatory;
+}
+
+.slider img{
+ width:100%;
+ left:0;
+ position:sticky;
+ object-fit: cover;
+ border-radius: 5px;
+ scroll-snap-align: center;
+}
+
+.antes{
+color:blueviolet;
+font-family: 'Lucida Sans';   
+font-size: 20px;
+}
+
+.logo{
+width: 93px;
+height: 63px; ;
+}
+
+.title-tdcf{
+    color:blue;
+    font-family: Arial;
+    size:20px;
+}
+
+.linker1{
+    color:red;
+    size:10px;
+    text-align:center;
+    }
+
+
+
+.linker2{
+    color:red;
+    size:10px;
+    text-align:center;
+    }
+
+
+.title-min-e-biu{
+    color:blue;
+    font-family: Arial;
+    size:20px; 
+}
+
+.title-kr{
+    color:blue;
+    font-family: Arial;
+    size:20px; 
+}
+
