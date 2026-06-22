@@ -15,6 +15,39 @@
 </p>
 <p class="linker1"><a href="index.html">Inicio</a></p>
 <p class="linker2"><a href="series.html">Séries</a></p>
+    <br>
+    <div class="carrossel-container">
+    <button class="seta" id="esquerda">❮</button>
+
+    <div class="carrossel" id="carrossel">
+        <div class="item">
+            <img src="./assets_carrossel/tdcf.jpg" alt="A Turminha de Cayo Falcão">
+            <p>A Turminha de<br> Cayo Falcão</p>
+        </div>
+
+        <div class="item">
+            <img src="./assets_carrossel/min_e_biu.jpg" alt="Min e Biu">
+            <p>Min e Biu</p>
+        </div>
+
+        <div class="item">
+            <img src="./assets_carrossel/kamil_reboot.jpg" alt="Kamil Reboot">
+            <p>Kamil Reboot</p>
+        </div>
+
+        <div class="item">
+            <img src="./assets_carrossel/estrelado.jpg" alt="Estrelado - O Peralta">
+            <p>Estrelado<br>- O Peralta</p>
+        </div>
+
+        <div class="item">
+            <img src="./assets_carrossel/doraemon.jpg" alt="Doraemon - O gato do futuro">
+            <p>Doraemon - <br> O gato do futuro</p>
+        </div>
+    </div>
+
+    <button class="seta" id="direita">❯</button>
+    </div>
 <hr>
 <p class="antes">VEJA NOSSAS ATRAÇÕES</p>
 <br>
@@ -29,5 +62,22 @@
 <source src="./assets/Min e Biu - Pascoa (1).mp4">    
 </video>
 </body>
+    <script>
+        const carrossel = document.getElementById("carrossel");
+
+document.getElementById("direita").addEventListener("click", () => {
+    carrossel.scrollBy({
+        left: 200,
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("esquerda").addEventListener("click", () => {
+    carrossel.scrollBy({
+        left: -200,
+        behavior: "smooth"
+    });
+});
+    </script>
 </html>
 
